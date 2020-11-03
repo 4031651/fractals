@@ -4,6 +4,9 @@
 .gitignore
 .prettierrc
 tsconfig.json
+tsconfig.modules.json
+src
+tmp
 
 # Logs
 logs
