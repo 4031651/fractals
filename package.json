@@ -1,0 +1,42 @@
+{
+  "name": "fractals",
+  "version": "1.0.0",
+  "description": "Tiny, dependency free library to easily generate fractals",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:4031651/fractals.git"
+  },
+  "homepage":"https://github.com/4031651/fractals#readme",
+  "author": "Sergey Tsapenko",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "typings": "lib/index.d.ts",
+  "keywords": [
+    "fractals",
+    "grahpics",
+    "IFS",
+    "L-system",
+    "Lindenmayer"
+  ],
+  "scripts": {
+    "clean": "rimraf lib esm",
+    "lint": "eslint \"src/**/*.ts\" --cache",
+    "compile:common": "tsc",
+    "compile:esm": "tsc -p tsconfig.modules.json",
+    "build": "npm run lint && npm run clean && npm run compile:common && npm run compile:esm",
+    "version" : "git add -A .",
+    "postversion" : "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  }
+}
