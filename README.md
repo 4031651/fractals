@@ -5,7 +5,7 @@ This library allows you to generate fractals in two different ways:
 * [IFS](https://en.wikipedia.org/wiki/Iterated_function_system)
 * [L-system](https://en.wikipedia.org/wiki/L-system)
 
-[Live Demo](https://4031651.github.io/tmp/fractals/)
+[Live Demo](https://4031651.github.io/fractals/)
 
 # Installation
 
