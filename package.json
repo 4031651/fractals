@@ -1,0 +1,32 @@
+{
+  "name": "fractals-page",
+  "version": "1.0.0",
+  "description": "fractals demo",
+  "license": "MIT",
+  "private": true,
+  "author": "Sergey Tsapenko",
+  "scripts": {
+    "clean": "rimraf build docs/js",
+    "compile": "tsc",
+    "link": "webpack --entry ./build/index.js -o ./docs/js --output-filename index.js",
+    "build": "npm run clean && npm run compile && npm run link"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "fractals": "^1.0.0",
+    "json-format-highlight": "^1.0.4",
+    "location-bar": "^3.0.1"
+  }
+}

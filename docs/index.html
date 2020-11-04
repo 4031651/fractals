@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fractals</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <script type="text/x-tmpl" id="examples">
+      <% for ( var i = 0, keys = Object.keys(fractals); i < keys.length; i++ ) { %>
+        <li class="clickable<%=(keys[i] === active ? " active" : "")%>" data-fractal="<%= keys[i] %>"><%= keys[i] %></li>
+      <% } %>
+    </script>
+    <div id="container">
+      <div class="inner">
+        <header>
+          <h1>Fractals</h1>
+        </header>
+        <section class="main_content">
+          <div class="sidebar" id="tabs">
+            <div class="tabs">
+              <div id="l" role="tab" aria-controls="l" aria-selected="true">L System</div>
+              <div id="ifs" role="tab" aria-controls="ifs" aria-selected="false">IFS</div>
+            </div>
+            <div class="tab-pane show" role="tabpanel" aria-labelledby="l">
+              <ul class="flat" id="l-examples"></ul>
+            </div>
+            <div class="tab-pane" role="tabpanel" aria-labelledby="ifs">
+              <ul class="flat" id="ifs-examples"></ul>
+            </div>
+          </div>
+          <div class="result">
+            <pre id="config"></pre>
+            <div class="result-image">
+              <canvas id="canvas"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="contribute">
+      <p><a href="https://github.com/4031651/fractals" class="btn">View on GitHub</a></p>
+    </div>
+  </body>
+</html>

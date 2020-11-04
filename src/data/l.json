@@ -1,0 +1,287 @@
+{
+  "Pythagoras Tree": {
+    "axiom": "FX",
+    "rules": { "X": ">[-FX]+FX<" },
+    "iterations": 10,
+    "distance": 100,
+    "angle": 50,
+    "lengthScale": 0.7
+  },
+  "L Tree": {
+    "axiom": "X",
+    "rules": { "F": "FF", "X": "F+[[X]-X]-F[-FX]+X" },
+    "iterations": 5,
+    "distance": 6,
+    "angle": 22.5
+  },
+  "L Tree 2": {
+    "axiom": "F",
+    "rules": { "F": ">FF+[+F-F-F]-[-F+F+F]<" },
+    "iterations": 5,
+    "distance": 20,
+    "angle": 22.5,
+    "lengthScale": 0.7
+  },
+  "32 Segment Curve": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "-F+F-F-F+F+FF-F+F+FF+F-F-FF+FF-FF+F+F-FF-F-F+FF-F-F+F+F-F+"
+    },
+    "iterations": 2,
+    "distance": 4,
+    "angle": 90
+  },
+  "Box Fractal": {
+    "axiom": "F-F-F-F",
+    "rules": {
+      "F": "F-F+F+F-F"
+    },
+    "iterations": 5,
+    "distance": 2,
+    "angle": 90
+  },
+  "Dragon Curve": {
+    "axiom": "FX",
+    "rules": {
+      "X": "X+YF+",
+      "Y": "-FX-Y"
+    },
+    "iterations": 14,
+    "distance": 3,
+    "angle": 90
+  },
+  "Twin Dragon Curve": {
+    "axiom": "FX+FX",
+    "rules": {
+      "X": "X+YF+",
+      "Y": "-FX-Y"
+    },
+    "iterations": 12,
+    "distance": 3,
+    "angle": 90
+  },
+  "Three Dragon Curve": {
+    "axiom": "FX+FX+FX",
+    "rules": {
+      "X": "X+YF+",
+      "Y": "-FX-Y"
+    },
+    "iterations": 12,
+    "distance": 3,
+    "angle": 90
+  },
+  "Ter Dragon Curve": {
+    "axiom": "F",
+    "rules": {
+      "F": "F-F+F"
+    },
+    "iterations": 9,
+    "distance": 3,
+    "angle": 120
+  },
+  "Levy C Curve": {
+    "axiom": "F",
+    "rules": {
+      "F": "+F--F+"
+    },
+    "iterations": 12,
+    "distance": 3,
+    "angle": 45
+  },
+  "Hilberts Curve": {
+    "axiom": "L",
+    "rules": {
+      "L": "+RF-LFL-FR+",
+      "R": "-LF+RFR+FL-"
+    },
+    "iterations": 7,
+    "distance": 3,
+    "angle": 90
+  },
+  "Hilbert Curve II": {
+    "axiom": "X",
+    "rules": {
+      "X": "XFYFX+F+YFXFY-F-XFYFX",
+      "Y": "YFXFY-F-XFYFX+F+YFXFY"
+    },
+    "iterations": 4,
+    "distance": 3,
+    "angle": 90
+  },
+  "Koch Snowflake": {
+    "axiom": "F--F--F",
+    "rules": {
+      "F": "F+F--F+F"
+    },
+    "iterations": 4,
+    "distance": 3,
+    "angle": 60
+  },
+  "Peano Curve": {
+    "axiom": "F",
+    "rules": {
+      "F": "F+F-F-F-F+F+F+F-F"
+    },
+    "iterations": 3,
+    "distance": 10,
+    "angle": 90
+  },
+  "Peano Gosper Curve": {
+    "axiom": "FX",
+    "rules": {
+      "X": "X+YF++YF-FX--FXFX-YF+",
+      "Y": "-FX+YFYF++YF+FX--FX-Y"
+    },
+    "iterations": 4,
+    "distance": 5,
+    "angle": 60
+  },
+  "Quadratic Koch Island": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "F-F+F+FFF-F-F+F"
+    },
+    "iterations": 3,
+    "distance": 3,
+    "angle": 90
+  },
+  "Sierpinski Arrowhead": {
+    "axiom": "YF",
+    "rules": {
+      "X": "YF+XF+Y",
+      "Y": "XF-YF-X"
+    },
+    "iterations": 7,
+    "distance": 3,
+    "angle": 60
+  },
+  "Sierpinski Curve": {
+    "axiom": "F+XF+F+XF",
+    "rules": {
+      "X": "XF-F+F-XF+F+XF-F+F-X"
+    },
+    "iterations": 5,
+    "distance": 3,
+    "angle": 90
+  },
+  "Siepinski Sieve": {
+    "axiom": "FXF--FF--FF",
+    "rules": {
+      "F": "FF",
+      "X": "--FXF++FXF++FXF--"
+    },
+    "iterations": 6,
+    "distance": 3,
+    "angle": 60
+  },
+  "Quadratic Snowflake": {
+    "axiom": "F--F",
+    "rules": {
+      "F": "F-F+F+F-F"
+    },
+    "iterations": 4,
+    "distance": 5,
+    "angle": 90
+  },
+  "Board": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "FF+F+F+F+FF"
+    },
+    "iterations": 4,
+    "distance": 5,
+    "angle": 90
+  },
+  "Cross": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "F+FF++F+F"
+    },
+    "iterations": 5,
+    "distance": 5,
+    "angle": 90
+  },
+  "Cross 2": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "F+F-F+F+F"
+    },
+    "iterations": 5,
+    "distance": 5,
+    "angle": 90
+  },
+  "Pentaplexity": {
+    "axiom": "F++F++F++F++F",
+    "rules": {
+      "F": "F++F++F+++++F-F++F"
+    },
+    "iterations": 4,
+    "distance": 5,
+    "angle": 36
+  },
+  "Tiles": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "FF+F-F+F+FF"
+    },
+    "iterations": 4,
+    "distance": 7,
+    "angle": 90
+  },
+  "Rings": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "FF+F+F+F+F+F-F"
+    },
+    "iterations": 4,
+    "distance": 3,
+    "angle": 90
+  },
+  "Krishna Anklets": {
+    "axiom": " -X--X",
+    "rules": {
+      "X": "XFX--XFX"
+    },
+    "iterations": 6,
+    "distance": 4,
+    "angle": 45
+  },
+  "Triangle": {
+    "axiom": "F+F+F",
+    "rules": {
+      "F": "F-F+F"
+    },
+    "iterations": 7,
+    "distance": 6,
+    "angle": 120
+  },
+  "Quadratic Gosper": {
+    "axiom": "YF",
+    "rules": {
+      "X": "XFX-YF-YF+FX+FX-YF-YFFX+YF+FXFXYF-FX+YF+FXFX+YF-FXYF-YF-FX+FX+YFYF-",
+      "Y": "+FXFX-YF-YF+FX+FXYF+FX-YFYF-FX-YF+FXYFYF-FX-YFFX+FX+YF-YF-FX+FX+YFY"
+    },
+    "iterations": 3,
+    "distance": 3,
+    "angle": 90
+  },
+  "Crystal": {
+    "axiom": "F+F+F+F",
+    "rules": {
+      "F": "FF+F++F+F"
+    },
+    "iterations": 4,
+    "distance": 5,
+    "angle": 90
+  },
+  "Moore Curve": {
+    "axiom": "LFL-F-LFL",
+    "rules": {
+      "L": "+RF-LFL-FR+",
+      "R": "-LF+RFR+FL-"
+    },
+    "iterations": 5,
+    "distance": 5,
+    "angle": 90
+  }
+}
